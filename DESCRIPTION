@@ -1,0 +1,24 @@
+Package: do.correct
+Title: Dissolved Oxygen Unit Conversion, Saturation Calculations, and QC Tools
+Version: 0.1.0
+Authors@R: person("Chris", "McBride", role = c("aut", "cre"),
+    email = "chris@limnotrack.com")
+Description: Tools for dissolved oxygen data processing in profiling and
+    fixed-depth sensor platforms. Includes unit conversions between mg/L
+    and percent saturation using the Garcia & Gordon (1992) / Benson &
+    Krause (1984) equations with full pressure and salinity correction.
+    Sensor-specific functions for Ponsel OptoD and In-Situ RDO Pro.
+    Optional barometric pressure retrieval from Open-Meteo API for
+    accurate altitude/pressure correction. Gain drift detection and
+    correction utilities for long-term DO sensor deployments.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    stats
+Suggests:
+    httr2,
+    jsonlite,
+    dplyr,
+    ggplot2
+Config/roxygen2/version: 8.1.0
